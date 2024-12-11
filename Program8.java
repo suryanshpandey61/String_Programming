@@ -1,11 +1,11 @@
 import java.util.Scanner;
-class Program7{
+class Program8{
 
-	public static void getIndexes(String s){
+	public static void printIndexOfSpaceChar(String s){
 		for(int i=0;i<s.length();i++){
-			if(s.charAt(i)>='0' && s.charAt(i)<='9'){
-				System.out.println(s.charAt(i)+" occurs at "+i);
-			}
+			char ch=s.charAt(i);
+			if(ch==' ')
+				System.out.println(i);
 		}
 	}
 
@@ -13,10 +13,8 @@ class Program7{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter any string:");
 		String s=sc.nextLine();
-		getIndexes(s);	
+		printIndexOfSpaceChar(s);
 	}
-		
-
-
+	
 
 }
